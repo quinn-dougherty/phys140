@@ -20,3 +20,6 @@ def cross(u: list, v: list) -> list:
 		u[0]*v[1] - u[1]*v[0]
 	]
 
+def smult(k: float, u: list) -> list: 
+	return [k*ui for ui in u]
+

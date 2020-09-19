@@ -1,10 +1,10 @@
 from utils import dot, length
 from math import cos, acos, sin, degrees, radians, pi
 
-mag = 47
-a_direc = radians(33)
-b_direc = radians(193)
-c_direc = radians(311)
+mag = 49
+a_direc = radians(30)
+b_direc = radians(191)
+c_direc = radians(312)
 
 a_ihat = mag * cos(a_direc)
 a_jhat = mag * sin(a_direc)
