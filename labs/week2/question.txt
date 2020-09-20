@@ -1,0 +1,3 @@
+Specific gravity (better known as relative density) is a ratio of the density of a substance to the density of a reference. In our case today, the reference material is water, and it's density is 1 g/cm^3. Therefore, the relative density's numerical value is the same as the numerator density value, because anything divided by one is itself. That is why specific gravity and density have the same numerical values in CGS units. 
+
+Relative density is a unitless quantity, because it's two densities divided: a mass divided by a volume, divided by a mass divided by a volume makes the units cancel entirely. 

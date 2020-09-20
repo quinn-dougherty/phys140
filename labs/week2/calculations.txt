@@ -1,0 +1,29 @@
+>>> 37/12.53
+2.9529130087789306
+>>> 50/6.43
+7.776049766718508
+>>> al_density_calc = 37/12.53
+>>> fe_density_calc = 50/6.43
+>>> al_percent_error = (al_density_calc - 2.70) / 2.70
+>>> al_percent_error
+0.09367148473293718
+>>> al_percent_error = 100 * (al_density_calc - 2.70) / 2.70
+>>> al_percent_error
+9.36714847329372
+>>> fe_percent_error = 100 * (fe_density_calc - 7.88) / 7.88
+>>> fe_percent_error
+-1.3191653969732502
+>>> al_specific_gravity = 37.36 / (37.36 - 24.8)
+>>> al_specific_gravity
+2.974522292993631
+>>> (al_specific_gravity - al_density_calc) / (al_specific_gravity + al_density_calc)
+0.0036456381410419295
+>>> 200 * (al_specific_gravity - al_density_calc) / (al_specific_gravity + al_density_calc)
+0.729127628208386
+>>> fe_specific_gravity  = 50.03 / (50.03 - 43.8)
+>>> fe_specific_gravity
+8.03049759229534
+>>> 200 * (fe_specific_gravity - fe_density_calc) / (fe_specific_gravity + fe_density_calc)
+3.2195244134922483
+>>> 
+
