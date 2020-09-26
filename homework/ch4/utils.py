@@ -30,12 +30,18 @@ def angle(u: list, base="radians") -> float:
 	if base=="radians": 
 		return theta
 	else: 
-		return 180 * theta / pi
+		return theta * 180 / pi
 
 def angle2(u: list, base="radians") -> float: 
+	"""the angle from the positive x axis"""
 	assert len(u) == 2
 	theta = atan(u[1] / u[0])
 	if base=="radians": 
 		return theta
-	else:
-		return 180 * theta / pi
+	else: 
+		return theta * 180 / pi
+
+
+def call(u: list, t: float) -> list: 
+	assert all(callable(ui) for ui in u)
+	return [ui(t) for ui in u]

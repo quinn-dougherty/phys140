@@ -1,7 +1,7 @@
 from utils import print_float3
 
-volume_in_gallons = 182
-rate_in_gallons_per_minute = 1.6
+volume_in_gallons = 187
+rate_in_gallons_per_minute = 2.0
 
 gallon_inchescubed_conversion_factor = 231
 water_density_kg_per_meterscubed = 1000
@@ -15,8 +15,7 @@ volume_cubic_m = volume_cubic_cm / 100**3
 
 mass_required_to_fill_bottle = volume_cubic_m * 1000
 
-# rate_in_kilograms_per_minute = 0.00190
-rate_in_kilograms_per_minute = 1.6e-3
+rate_in_kilograms_per_minute = rate_in_gallons_per_minute / water_density_kg_per_meterscubed
 
 minutes_required_to_fill_bottle = mass_required_to_fill_bottle / rate_in_kilograms_per_minute
 
