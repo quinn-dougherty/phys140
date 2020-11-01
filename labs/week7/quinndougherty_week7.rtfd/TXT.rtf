@@ -1,0 +1,68 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red255\green238\blue149;\red21\green102\blue47;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c94118\c64706;\cssrgb\c7451\c46667\c23922;}
+\margl1440\margr1440\vieww13900\viewh15540\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Summary\
+
+\fs24 This week we had a boom suspended from a spring with tension in it. The boom\'92s mass was complemented by a weight hanging from the top of the boom. The observation is the force of tension against the force of gravity. For calculations, we took the sum of the weight of the boom with the weight hanging from the boom. We predicted an S by taking a weighted sum and dividing it by OC. Force was the Euclidean distance between V and H. We needed to calculate the angle the boom was hanging at by taking the arctangent. Finally we calculated the percent difference. \
+
+\fs36 Data Sheet\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs24 \cf0 {{\NeXTGraphic Screen Shot 2020-10-25 at 10.37.16 AM.png \width9380 \height6980 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 Calculations \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf2 \cb3 \CocoaLigature0 >>> def S_pred(OE, Wb, OD, L, OC):\
+...     return (OE * Wb + OD * L) / OC\
+... \
+>>> from math import atan, sqrt\
+>>> def F(V, H): \
+...     return sqrt(V**2 + H**2)\
+... \
+>>> def percent_diff(s_meas, s_pred): \
+...     return 200 * abs(s_meas - s_pred) / (s_meas + s_pred)\
+... \
+>>> 2.05 + 8.82\
+10.870000000000001\
+>>> 2.05 + 9.8\
+11.850000000000001\
+>>> H(0.017, 2.05, 0.042, 8.82, 0.024)\
+Traceback (most recent call last):\
+  File "<stdin>", line 1, in <module>\
+NameError: name 'H' is not defined\
+>>> S_pred(0.017, 2.05, 0.042, 8.82, 0.024)\
+16.887083333333333\
+>>> S_pred(0.018, 2.05, 0.042, 9.8, 0.022)\
+20.38636363636364\
+>>> F(10.87, 16.887)\
+20.083019419400063\
+>>> F(11.85, 20.386)\
+23.579896013341536\
+>>> atan(10.87 / 16.887)\
+0.5719268624991602\
+>>> atan(11.85 / 20.386)\
+0.5265420088935429\
+>>> percent_diff(18, 16.887)\
+6.3806002235789805\
+>>> percent_diff(20, 20.386)\
+1.911553508641605
+\f0 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 Analysis\
+
+\fs24 I think we had satisfyingly low percent difference between S_pred and S_meas. It\'92s interesting that the calculated angle theta between forces is complemented by the empirical angle that the boom is hanging at. \
+
+\fs36 Questions\
+
+\fs24 1. It would be possible. I would have 2 equations and 2 unknowns. \
+2. It is not always the case that two forces acting on an object can be combined into one force. If the object is large and the forces are acting on different points, it would be difficult to combine them. Also, if the forces are applied at different times, there would be an issue combining the forces. \
+3. Yes, the sum of moments would hang lower if we calculated it about point D. }
