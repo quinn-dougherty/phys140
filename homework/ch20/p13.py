@@ -1,7 +1,7 @@
 from math import log 
 
 L = 309.5 # K
-R = 295.5 # Kelvin
+R = 298.5 # Kelvin
 
 energy_transferred_for_equilibrium = 240 # J
 

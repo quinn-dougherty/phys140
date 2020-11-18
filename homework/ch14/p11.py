@@ -1,8 +1,8 @@
 
-head_above_heart = 1.86 # m
-heart_above_feet = 1.88 # m 
+head_above_heart = 1.9 # m
+heart_above_feet = 2.19 # m 
 
-gauge_pressure_at_heart = 245 # torr
+gauge_pressure_at_heart = 252 # torr
 
 blood_density = 1.06e3 # kg / m / m / m
 

@@ -1,6 +1,6 @@
 
-snorkel_length = 0.21 # m
-snorkel_length_2 = 3.90 # m
+snorkel_length = 0.26 # m
+snorkel_length_2 = 3.5 # m
 g = 9.80665
 
 

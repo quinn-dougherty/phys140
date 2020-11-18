@@ -1,11 +1,11 @@
 
-refrigerator = 6.14 # celsius
+refrigerator = 6.45 # celsius
 
-car_temp = 80.4 # celsius
+car_temp = 88.7 # celsius
 
-refrigerator_kelvin = 279.29
+refrigerator_kelvin = refrigerator + 273.15
 
-car_kelvin = 353.55
+car_kelvin = car_temp + 273.15
 
 
 if __name__=="__main__":

@@ -1,7 +1,7 @@
 
-oxygen = 3.5 # mol
-start_temp = 19 # celsius
-start_temp_kelvin = 292.15 # kelvin
+oxygen = 2.5 # mol
+start_temp = 16 # celsius
+start_temp_kelvin = 289.15 # kelvin
 
 
 

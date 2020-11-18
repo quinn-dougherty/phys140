@@ -1,8 +1,8 @@
 
-rest = 15 # celsius
-l = 30 # cm
+rest = 16 # celsius
+l = 32 # cm
 
-new_temp = 66 # celsius
+new_temp = 69 # celsius
 
 brass_linearexpansion_coef = 19e-6 # C
 

@@ -1,7 +1,7 @@
 from math import sqrt
 
-depth = 0.67 # m 
-ratio = 0.34
+depth = 0.57 # m 
+ratio = 0.32
 
 g = 9.80665
 

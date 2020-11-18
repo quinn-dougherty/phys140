@@ -1,8 +1,8 @@
 
-heater = 56 # kW
-volume = 130 # L
-from_cels = 23 # celsius
-to_cels = 35 # celsius
+heater = 65 # kW
+volume = 170 # L
+from_cels = 16 # celsius
+to_cels = 36 # celsius
 
 specific_heat_water = 4186 # J / kg / K
 density_of_water = 1 # g / cm / cm / cm
