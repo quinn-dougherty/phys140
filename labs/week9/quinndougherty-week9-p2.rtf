@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red254\green244\blue139;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c99608\c95686\c61176;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Calculations
+\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 >>> from math import pi, sqrt\
+>>> M = lambda m_w: m_w + 25 + 5/3\
+>>> T_p = lambda M: 2 * pi * sqrt(M / 19600)\
+>>> m_ws = [100, 150, 200, 250]\
+>>> n = 50\
+>>> [M(m_w) for m_w in m_ws]\
+[126.66666666666667, 176.66666666666666, 226.66666666666666, 276.6666666666667]\
+>>> [T_p(M) for M in [M(m_w) for m_w in m_ws]]\
+[0.5051065538838905, 0.5965256740218038, 0.6756871530211855, 0.7465007553570076]\
+>>> T_ps = [T_p(M) for M in [M(m_w) for m_w in m_ws]]\
+>>> T_ms = [T_n / n for T_n in [25, 29, 32, 28]]\
+>>> T_ms\
+[0.5, 0.58, 0.64, 0.56]\
+>>> [100 * abs((T_p - T_m) / T_p) for T_p, T_m in zip(T_ps, T_ms)]\
+[1.010985473188757, 2.7703206653934886, 5.281608931236641, 24.983331097610893]
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs36 \cf0 1 - How do you calculate the spring constant of a spring? 
+\fs24 \
+The spring force constant 
+\i k 
+\i0 is the change in force divided by the change in position of a spring, the change in position can be thought of as the elongation that occurs when the spring is stretched across the given change in force. \
+
+\fs36 2 - If the period of oscillation of a spring is 0.5 s, what is its frequency? \
+
+\fs24 The formula for the frequency of an oscillation with period 
+\i p
+\i0  is 
+\i 1/p
+\i0 . So The frequency of an oscillation who\'92s period is 0.5 is 1/.5 = 2. }

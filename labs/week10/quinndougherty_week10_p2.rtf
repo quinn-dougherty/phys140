@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf610
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red254\green244\blue139;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c99608\c95686\c61176;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Calculations\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 >>> lamb1 = lambda l_corr: 4 * l_corr / 3\
+>>> lamb2 = lambda l_corr: 4 * l_corr / 5\
+>>> lamb1(51.02)\
+68.02666666666667\
+>>> lamb2(85.02)\
+68.01599999999999\
+>>> (70.1 + 68.02667 + 68.016) / 3\
+68.71422333333334\
+>>> 512 * 0.687142233\
+351.816823296\
+>>> v = 512 * 0.687142233\
+>>> from math import sqrt\
+>>> v_t = 331.3 * sqrt((273.2 + 25) / 273.2)\
+>>> v_t\
+346.12654549716905\
+>>> 100 * abs(v - v_t) / v_t\
+1.6439876897212695\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \cb1 \CocoaLigature1 \
+}
