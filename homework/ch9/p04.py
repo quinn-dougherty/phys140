@@ -1,6 +1,6 @@
 
 
-L = 27 # cm
+L = 38 # cm
 m = 11 # g
 
 if __name__=="__main__":

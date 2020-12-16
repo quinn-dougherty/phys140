@@ -1,6 +1,6 @@
 
-weight = 648 # newtons
-F_N = 569 # newtons
+weight = 674 # newtons
+F_N = 576 # newtons
 
 F_c = weight - F_N # newtons
 

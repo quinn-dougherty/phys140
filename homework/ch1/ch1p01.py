@@ -1,4 +1,4 @@
-from ..utils import format_float3
+from utils import format_float3
 from math import pi 
 
 earth_radius = 6.37e+6 # in meters
